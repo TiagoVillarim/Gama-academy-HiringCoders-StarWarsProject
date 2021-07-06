@@ -1,0 +1,64 @@
+$blackGround: #000;
+$fontColorWhite: #fff;
+$fontFamilyDefault:'Roboto', sans-serif;
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $blackGround;
+  color: $fontColorWhite;
+  font-family: $fontFamilyDefault;
+}
+
+h1, h2, h3, h4, h5, p, b, span {
+  font-family: $fontFamilyDefault;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.block-section {
+  display: flex;
+  margin-top: 200px;
+  height: 100% ;
+}
+
+.main-left {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+}
+
+.baby-yoda-instruction {
+  margin-top: 50px;
+}
+
+.footer-container {
+  margin-top: calc(10px - 220px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $fontFamilyDefault;
+  width: 100%;
+  
+  & img {
+    margin-right: 90px;
+    margin-top: -48px;
+  }
+
+  & p {
+    margin-left: 370px;
+    margin-top: -40px;
+  }
+
+}
